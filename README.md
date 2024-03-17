@@ -1,1 +1,1 @@
-# AI_tic_tac_toe
+# Tic Tac Toe AI using minimax algorithm
