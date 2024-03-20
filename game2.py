@@ -163,15 +163,9 @@ def main():
         print("AI is thinking...")
         # If the player chooses to start as O, let AI play first
         best_actions = {}
-        move = minimax(board)
-        board = result(board, move)
-    else:
-        print("AI is thinking...")
-        # If the player chooses to start as X, randomly select AI's first move
-        best_actions = {}
         move = random.choice(list(actions(board)))
         board = result(board, move)
-
+   
     while not terminal(board):
         print_board(board)
         while True:
@@ -201,3 +195,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
